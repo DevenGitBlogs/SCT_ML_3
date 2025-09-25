@@ -1,0 +1,59 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.upload-area {
+  background: #1e1e1e;
+  border: 2px dashed #00ffcc;
+  padding: 30px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.upload-area p {
+  color: #bbb;
+}
+
+.upload-area span {
+  color: #00ffcc;
+  cursor: pointer;
+}
+
+#preview {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background: #00ffcc;
+  color: #000;
+  padding: 10px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffcc; }
+  to { text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+}

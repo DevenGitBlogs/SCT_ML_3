@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat vs Dog - AI Classifier</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Cat vs Dog Classifier</h1>
+    <div class="upload-area" id="drop-area">
+      <input type="file" id="fileInput" accept="image/*" hidden>
+      <p>📤 Drag & Drop or <span onclick="document.getElementById('fileInput').click()">Browse</span> an image</p>
+      <img id="preview" src="/static/preview.png" alt="Preview" />
+    </div>
+    <button onclick="uploadImage()">Predict</button>
+    <div id="result"></div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
